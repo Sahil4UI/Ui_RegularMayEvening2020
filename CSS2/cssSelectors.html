@@ -1,0 +1,49 @@
+<!-- CSS selectors -
+id -> #
+class -> .
+* universal selector-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .heading1{
+            color:red;
+        }
+        #heading3
+        {
+            color:aqua;
+        } */
+
+        /* *{
+            color:aqua;
+        } */
+
+        /* priority Order - # > . > * */
+        .heading1{
+            color: red !important;
+        }
+        #h1{
+            color:green;
+        }
+        *{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading1" id="h1">this is heading 1</h1>
+    <h1 class="heading1">this is heading 2</h1>
+    <h1 id="heading3">this is heading 3</h1>
+    <h1>this is heading 4</h1>
+    <h1>this is heading 5</h1>
+    <h1>this is heading 6</h1>
+    <h1>this is heading 7</h1>
+    <h1>this is heading 8</h1>
+    <h1>this is heading 9</h1>
+    <h1>this is heading 10</h1>
+</body>
+</html>
+
