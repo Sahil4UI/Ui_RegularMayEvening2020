@@ -1,0 +1,45 @@
+/* default Settings */
+body
+{
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6,p
+{
+    margin-top:0;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* helper classes */
+.left
+{
+    float:left;
+}
+.right{
+    float:right;
+}
+.clear::after
+{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+/* header section */
+#header{
+    background-color: #009270;
+}
+#mainNav ul li{
+    display: inline-block;
+}
+#mainNav  ul li a{
+    color:#fff;
+    text-transform: capitalize;
+}
