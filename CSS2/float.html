@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #div1,#div2
+        {
+            height:200px;
+            width:50%;
+        }
+        #div1{
+            background-color: red;
+            float:left;
+        }
+        #div2{
+            background-color: blue;
+            float:right;
+        }
+
+        #container::after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+
+        /* .blank{
+            height:200px;
+            width:100%;
+        } */
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="div1">
+                <h2>DIV1</h2>
+        </div>
+        <div id="div2">
+            <h2>DIV2</h2>
+        </div>
+    </div>
+    <!-- <div class="blank">
+
+    </div> -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum officia rerum harum rem facilis ducimus voluptas reprehenderit, necessitatibus nihil tenetur unde, id perferendis autem modi sequi dolorum corrupti aliquam dolore?
+    Nihil eveniet cumque ducimus sequi in dignissimos molestias alias facere vel fugiat et voluptate praesentium debitis quaerat, maxime odit adipisci quisquam totam perferendis incidunt doloremque, quis ipsam voluptates? Optio, quaerat?
+    Itaque earum ab, unde tempore inventore maxime culpa architecto? Distinctio quis veritatis obcaecati officia atque voluptates corporis itaque sunt quasi nostrum cum perspiciatis ad voluptatem, corrupti labore nihil ea! Aperiam.
+    Rerum asperiores architecto voluptatibus, eaque dignissimos cumque. Harum aliquid repellat, blanditiis, rerum architecto saepe voluptatibus beatae reiciendis minus, incidunt praesentium magnam omnis sint deserunt iusto officiis porro sit. Eum, assumenda!
+    Saepe amet, dolorum voluptatem ipsam, delectus a similique recusandae cum, necessitatibus provident iusto asperiores sit sapiente? Quos est eligendi nemo iste dolore facere quis dolores, ea reiciendis, hic sit veniam!</p>
+
+</body>
+</html>
