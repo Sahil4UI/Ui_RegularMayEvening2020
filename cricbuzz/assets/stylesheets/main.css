@@ -2,6 +2,8 @@
 body
 {
     margin:0;
+    background-color: #E3E6E3;
+    font-family: helvetica,"Segoe UI",Arial,sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p
 {
@@ -22,24 +24,85 @@ a{
 {
     float:left;
 }
+
 .right{
     float:right;
 }
+
 .clear::after
 {
     content: "";
     display: block;
     clear:both;
 }
-
+#container{
+    width:1000px;
+    margin:10px auto 0px auto;
+}
 /* header section */
 #header{
     background-color: #009270;
+
 }
+#header .logo a{
+    display: block;
+    padding:7px 15px;
+}
+
 #mainNav ul li{
     display: inline-block;
+    position: relative;
 }
+
 #mainNav  ul li a{
     color:#fff;
     text-transform: capitalize;
+    display: block;
+    padding:22px 5px 10px 5px;
+    font-size: 14px;
+}
+#mainNav  ul li a:hover {
+    background-color: #028062;
+}
+
+#mainNav  .dropdown{
+    position: absolute;
+    width:200px;
+    background-color: #fff;
+    display: none;
+} 
+#mainNav ul li:hover .dropdown{
+    display: block;
+}
+#mainNav .dropdown li{
+    display: block;
+}
+#mainNav .dropdown li a{
+    color:#000;
+    padding:14px 16px;
+}
+#mainNav  .dropdown li a:hover{
+background-color: #ECEBEB;
+}
+#searchBar{
+    margin:8px 7px  8px 0px;
+}
+#searchBar input[type="text"]
+{
+    background-color: #00785C;
+    padding:8px 6px;
+    color:#B1CFC6;
+    border:none;
+}
+#searchBar input[type="text"]::placeholder
+{
+    color:#B1CFC6;
+}
+#searchBar i{
+    color:#fff;
+    background-color:#00785C ;
+    display: inline-block;
+    margin-right: -4px;
+    font-size: 12px;
+    padding: 10px 8px 9px 8px;
 }
