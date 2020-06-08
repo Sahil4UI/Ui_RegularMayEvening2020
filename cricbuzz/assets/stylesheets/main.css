@@ -112,15 +112,22 @@ background-color: #ECEBEB;
 }
 
 /* content section */
+#content{
+}
 #sideBar1 , 
 #main,
 #sideBar2{
     background-color: #fff;
-    padding: 15px;
+   
 }
 /* sidebar1 section  */
 #sideBar1{
     width:20%;
+
+}
+#latestNews{
+    border-top: 5px solid #E3E6E3;
+    padding: 15px;
 
 }
 #latestNews ul li:not(:last-child),
@@ -154,12 +161,39 @@ font-size: 14px;
 line-height: 1.5;
 margin-bottom: 8px;
 }
+#latestPhotos{
+    padding: 15px;
+    border-top: 5px solid #E3E6E3;
+
+}
 /* main section  */
 #main{
-    width:41%;
+    width:50%;
+}
+#CoronaNews{ padding: 15px;
+    border: 5px solid #E3E6E3;
+}
+#CoronaNews span{
+    font-size: 13px;
+    color:#878787;
+    padding:8px 0 12px 0;
+    display: block;
 }
 
 
+#CoronaNews p{
+    font-size: 14px;
+    color: #878787;
+    line-height: 1.5;
+}
+#CoronaNews ul li{
+    margin:8px 0;
+}
+#CoronaNews ul li a{
+    font-size: 14px;
+    color: #1866DB;
+    font-weight: 600;
+}
 
 /* sidebar2 section  */
 #sideBar2{
@@ -172,7 +206,11 @@ margin-bottom: 8px;
     margin: 0;
 
 }
+#trending{ padding: 15px;
 
+    border-top: 5px solid #E3E6E3;
+
+}
 #trending .poster{
     border-radius: 5px;
 }
