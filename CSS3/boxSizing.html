@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        #container::after{
+            content: "";
+            display: block;
+            clear:both;
+        }
+        .div1,.div2{
+            height: 300px;
+            width: 50%;
+        }
+        .div1{
+            background-color: aqua;
+            float:left;
+        }
+        .div2{
+            background-color: chartreuse;
+            /* float:right; */
+            float:left;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- float:left /right -->
+    <div id="container">
+        <div class="div1">DIV1</div>
+        <div class="div2">DIV2</div>
+    </div>
+</body>
+</html>

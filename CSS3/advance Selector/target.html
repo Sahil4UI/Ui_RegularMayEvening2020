@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            background-color: chartreuse;
+            width:300px;
+            padding: 15px;
+            display: none;
+        }
+        input,button{
+            display:block;
+            margin:12px 8px;
+        }
+        a{
+            background-color: black;
+            padding: 11px 18px;
+            display:inline-block;
+            margin: 10px;
+            color: #fff;
+        }
+        #form:target{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#form">LOGIN NOW</a>
+
+    <div id="form">
+        <h3>LOGIN FORM</h3>
+        <a href="#">CLOSE X</a>
+        <form action="#">
+            <input type="text" name="" id="" placeholder="ENTER NAME">
+            <input type="password" name="" id="" placeholder="ENTER PASSWORD">
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
