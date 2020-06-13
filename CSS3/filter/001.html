@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #photo{
+            width:800px;
+            height: 500px;
+            background-image: url("https://www.click2houston.com/resizer/MwtsSA9knHglrUR6xW4cpFeObvE=/1280x720/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/WBJWZQHJBRB73KKMVHB7FPKT6U.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            /* filter:blur(15px); */
+            position: relative;
+        }
+        #photo:after{
+            content:"";
+            display: block;
+            width:100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            /* background-color: #000; */
+            opacity: 0.5;
+            background: linear-gradient(45deg,aqua,green,blue);
+        }
+        #photo:hover {
+           /* filter:blur(0px); */
+           /* filter:brightness(200%); */
+           /* filter:grayscale(); */
+           /* filter:contrast(); */
+           /* filter:contrast(150%) */
+        }
+    </style>
+</head>
+<body>
+    <div id="photo"></div>
+</body>
+</html>
