@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Parent{
+                height:700px;
+                width:700px;
+                background-color: antiquewhite;
+                
+                margin:0 auto;
+                position: relative;
+
+        }
+        #child{
+            height:500px;
+            width: 500px;
+            background-color: #000;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin-left:-250px;
+            margin-top:-250px;
+
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:0;
+            animation:5s footballMove linear infinite;
+        }
+        @keyframes footballMove{
+            0%{
+                    left:0;
+                    top:0;
+            }
+            25%{
+                    left:600px;
+                     top:0;
+            }
+            50%
+            {
+                left:600px;
+                    top:600px;
+            }
+            75%{
+                    top:600px;
+                    left:0px;
+            }
+            100%{
+                    left:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Parent">
+        <div id="child"></div>
+        <img src="https://i0.wp.com/freepngimages.com/wp-content/uploads/2018/06/football-no-background.png?fit=1000%2C1000" alt="">
+    </div>
+
+    HOMEWORK :
+    build a Solar System using css3 Animation 
+</body>
+</html>

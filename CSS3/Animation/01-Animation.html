@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* width:100%; */
+            height: 280px;
+            border: 1px solid red;
+        }
+        img{
+            width:20%;
+            /* animation: duration Name timing-function iteration-count; */
+            animation: 4s cartoonMove linear infinite;
+        }
+        /* @keyframes cartoonMove{
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform:translateX(700px);
+            }
+        } */
+        @keyframes cartoonMove{
+            0%{
+                transform: translateX(0px);
+            }
+            50%{
+                transform: translateX(900px);
+            }
+            55%{
+                transform: translateX(900px) rotateY(180deg);
+            }
+            100%{
+                transform:translateX(0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://i.ya-webdesign.com/images/jerry-drawing-hanuman-12.gif" alt="">
+    </div>
+</body>
+</html>
