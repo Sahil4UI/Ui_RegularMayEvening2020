@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slideshow{
+            height:600px;
+            width:100%;
+            animation: 20s slideShow linear infinite;
+            background-size: 100% 100%;
+        }
+        @keyframes slideShow{
+            0%,10%{
+                background-image: url("https://images.hgmsites.net/lrg/pagani-huayra-lultimo--image-via-prestige-imports-miami_100664356_l.jpg");
+            }
+            20%,30%{
+                background-image: url("https://robbreportedit.files.wordpress.com/2020/01/veneno01.jpg");
+            }
+            40%,50%{
+                background-image: url("https://www.koenigsegg.com/wp-content/uploads/2016/09/RSR.png");
+            }
+            60%,70%{
+                background-image: url("https://www.motorbeam.com/wp-content/uploads/2015-Kawasaki-Ninja-H2R-Wallpaper.jpg");
+            }
+            80%,90%{
+                background-image: url("https://www.autodevot.com/wp-content/uploads/2018/11/2019-BMW-S-1000-RR.jpg");
+            }
+            100%{
+                background-image: url("https://images.hgmsites.net/lrg/pagani-huayra-lultimo--image-via-prestige-imports-miami_100664356_l.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="slideshow"></div>
+</body>
+</html>

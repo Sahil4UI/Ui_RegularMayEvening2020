@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container div{
+            padding: 20px;
+            border: 2px solid red;
+        }
+        .grid_item_1{
+            grid-area: header;
+        }
+        .grid_item_2{
+            grid-area: menu;
+        }
+        .grid_item_3{
+            grid-area: main;
+        }
+        .grid_item_4{
+            grid-area: right;
+        }
+        .grid_item_5{
+            grid-area: footer;
+        } 
+
+        #container{
+            display: grid;
+            grid-template-areas:'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer' ;
+            grid-gap: 12px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="grid_item_1">HEADER SECTION</div>
+        <div class="grid_item_2">SIDEBAR _LEFT</div>
+        <div class="grid_item_3"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto consectetur veritatis amet, corporis distinctio rem quam accusantium. Libero iure corrupti rem ut vero expedita accusantium dicta facilis labore cupiditate. At!
+        Laudantium animi eius veniam veritatis magni ullam qui molestias, error fugit in accusantium culpa ipsum explicabo autem quo minus. Tempore excepturi fugit odit temporibus non, reiciendis atque vitae debitis quisquam.
+        Magnam nobis at amet repellat saepe eum perspiciatis eos in quis unde! Fuga voluptatibus, nisi itaque qui voluptatem architecto et? Accusamus iure repellat nostrum deleniti officia expedita, enim nobis quos!
+        Ut, ullam quia fuga corporis molestias neque autem, ex dolores quasi quaerat esse similique, quae eius debitis deleniti eveniet delectus itaque sapiente aspernatur nesciunt fugiat hic incidunt. Consequuntur, nobis? Sapiente.
+        Earum doloribus in a ipsam accusamus? Reiciendis similique corrupti deserunt. Distinctio illo provident eum ipsum incidunt sequi cumque rerum a, eos quod beatae! Blanditiis laudantium at, fugiat nobis recusandae fuga!
+        Fugit illo excepturi sit ipsa eos. Commodi omnis necessitatibus cum, minus, voluptatum, voluptatem sequi laboriosam magni libero repudiandae odio ipsum! Dolorem, id. Similique ipsa voluptatum quas enim placeat quo repudiandae?
+        Ut esse nam consectetur aperiam doloremque accusantium distinctio tempora pariatur non cum mollitia libero officiis officia enim suscipit, in repellendus commodi aut? Veritatis earum in facilis, voluptate sint veniam laborum.
+        Optio minima delectus nihil, maiores iste quae obcaecati eveniet minus odit maxime quod, quidem velit enim laudantium dolor sit nam quisquam necessitatibus magnam modi quia laborum vero. Fugiat, praesentium sapiente?
+        Possimus quisquam, quaerat temporibus, quo earum quis nulla tenetur corrupti explicabo repudiandae voluptatum obcaecati ab distinctio ducimus magnam consectetur eveniet. Voluptate ipsa in ullam placeat sequi est commodi tempora mollitia?
+        Sunt ut eum quos officia. Quo illum aut eius, alias officia non amet, expedita libero sunt nulla illo fugit eveniet exercitationem placeat? Quas perferendis maxime nemo harum cum, explicabo cupiditate!</p></div>
+        <div class="grid_item_4">SIDEBAR _RIGHT</div>
+        <div class="grid_item_5">FOOTER SECTION</div>
+    </div>
+</body>
+</html>
