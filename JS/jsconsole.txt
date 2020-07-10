@@ -1,0 +1,141 @@
+
+
+var a = 12;
+undefined
+var b = 22;
+undefined
+var c = a + b;
+undefined
+ca = 22
+22
+c = 22
+22
+d = a + c
+34
+typeof(a)
+"number"
+a = "hello";
+"hello"
+typeof(a)
+"string"
+a = 12
+12
+b = "23"
+"23"
+typeof(a)
+"number"
+typeof(b)
+"string"
+a + b
+"1223"
+c = 34
+34
+a+b+c
+"122334"
+a+c+b
+"4623"
+a * b
+276
+a
+12
+b
+"23"
+a - b
+-11
+a / b
+0.5217391304347826
+a = "12"
+"12"
+b = 12
+12
+a == b
+true
+a === b
+false
+function add(){
+	x = 12;
+	y = 13;
+	z = x + y;
+	console.log(z);
+}
+undefined
+add()
+VM708:5 25
+undefined
+x - y
+-1
+function add(){
+	var x1 = 12;
+	var y1 = 13;
+	var z1 = x + y;
+	console.log(z1);
+}
+undefined
+add()
+VM811:5 25
+undefined
+x1 - y1
+VM853:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM853:1
+function add(){
+	var x1 = 12;
+	var y1 = 13;
+	var z1 = x1 + y1;
+	return z1;
+}
+undefined
+add()
+25
+a = 12;
+12
+var a = 12;
+undefined
+a = 12
+12
+typeof(a)
+"number"
+a = 12.555
+12.555
+typeof(a)
+"number"
+a = "hello"
+"hello"
+typeof(a)
+"string"
+a instanceof Number
+false
+b instanceof String
+false
+a instanceof String
+false
+typeof(a)
+"string"
+arr instanceof Array
+true
+Array instanceof Object
+true
+arr instanceof Object
+true
+typeof(Object)
+"function"
+typeof(Array)
+"function"
+var str = new String("Hello");
+undefined
+str
+String {"Hello"}
+typeof(str)
+"object"
+str instanceof String
+true
+str instanceof Object
+true
+x = "hello"
+"hello"
+x = "Hello"
+"Hello"
+str == x
+true
+str === x
+false
