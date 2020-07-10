@@ -17,8 +17,11 @@ a{
     text-decoration: none;
 }
 /* helper class */
-w-100{
+.w-100{
     width:100%;
+}
+.row{
+    display: flex;
 }
 
 /* --------------------------------------------- */
@@ -93,6 +96,7 @@ backface-visibility: hidden;
 #right-page .back{
     /* z-index: 20000; */
  backface-visibility: hidden;
+ overflow-y: scroll;
 
 }
 #container:hover #left-page{
@@ -208,10 +212,10 @@ padding:0.5em 1em 0em 1em;
     padding-bottom: 3px;
     
 }
-#left-page .back .subheadings{
+ .subheadings{
     text-align: center;
 }
-#left-page .back .subheadings span{
+.subheadings span{
     display: inline-block;
     padding: 3px 12px;
     border:1px dashed #888;
@@ -250,4 +254,143 @@ padding:0.5em 1em 0em 1em;
 
 #Devskills .devskill:nth-child(3) h4:after{
     width:50%;
+}
+
+/* MID PAGE */
+#mid-page {
+    background-color:aliceblue;
+}
+#mid-page nav{
+    text-align: center;
+}
+#mid-page nav ul{
+display: flex;
+justify-content: space-around;
+}
+#mid-page nav ul li{
+    text-align: center;
+}
+#mid-page nav ul li a {
+color:#000;
+}
+#mid-page .allProject .row{
+    justify-content: space-around;
+}
+#mid-page .project{
+    width: 45%;
+    position: relative;
+
+}
+#mid-page .project img{
+    filter: grayscale();
+    /* display: inline-block; */
+    /* border: 8px solid #ffffff; */
+   box-shadow: 4px 0px 4px grey,4px 0px 4px grey;
+
+}
+#mid-page .project .hamburger{
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+#mid-page .project .hamburger i{
+    background-color: #888;
+    display: inline-block;
+    padding: 10px;
+    color:#fff;
+}
+#mid-page .project:hover .hamburger{
+    display: block;
+    filter:brightness(120%);
+} 
+#mid-page .project:hover img{
+    filter:none;
+}
+#right-page .back .contact-start{
+text-align: center;
+}
+#socialize{
+    margin-bottom: 20px;
+}
+#socialize ul{
+    display: flex;
+    justify-content: space-around;
+}
+#socialize ul li a i{
+    color:#000;
+
+font-size:20px;
+}
+#socialize ul li a{
+    display: block;
+    padding:12px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+#socialize ul li a:hover i {
+color:#fff;
+}
+#socialize ul li:first-child a:hover{
+    background-color:#339AF0;
+}
+#socialize ul li:nth-child(2) a:hover{
+    background-color:blue ;
+}
+#socialize ul li:nth-child(3) a:hover{
+    background-color:red ;
+}
+
+#socialize ul li:last-child a:hover{
+    background-color:#333 ;
+}
+#dropline .alt-bar {
+    text-align: center;
+}
+#dropline .alt-bar .bar{
+    display: inline-block;
+    height: 5px;
+    width:5%;
+}
+#dropline .alt-bar .bar:nth-child(odd){
+    background-color: #D45848;
+}
+#dropline .alt-bar .bar:nth-child(even){
+    background-color: blue;
+}
+#dropline #signature{
+    text-align: center;
+    margin:0;
+}
+
+#dropline #signature span{
+    font-size: 25px;
+    font-family: cursive;
+}
+#dropline .email,.name{
+    text-align: center;
+}
+#dropline .userImage{
+    text-align: center;
+}
+#dropline .userImage img{
+    width:150px;
+    height:150px;
+}
+#form{
+    margin:50px 0;
+}
+#form input,label,textarea{
+    display: block;
+    margin: 8px 0;
+}
+#form input{
+    width: 62%;
+    padding: 10px;
+}
+#form button[type="submit"]
+{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
 }
