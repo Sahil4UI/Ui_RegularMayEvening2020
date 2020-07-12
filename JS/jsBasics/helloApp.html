@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="ENTER NAME ...." id="box" name="username" class="nameBox">
+    <button onclick="showName();">CLICK ME</button>
+    <h2>HELLO <span id="result"></span></h2>
+
+    <script>
+        function showName()
+        {
+            name = document.getElementById("box").value;
+            document.querySelector("#result").innerText = name;
+        }
+
+    </script>
+</body>
+</html>
