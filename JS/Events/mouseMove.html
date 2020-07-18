@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    #banner{
+        width:60%;
+        /* overflow: hidden; */
+        margin: 150px auto 0 auto;
+    }
+    img{
+        /* transform: translate(-300px,-150px); */
+        transition: 1s;
+        width:inherit;
+    }
+</style>
+</head>
+<body>
+    <div id="banner">
+        <img src="https://www.dailydot.com/wp-content/uploads/2018/09/iron-fist-power.jpg" alt="">
+    </div>
+
+    <script>
+        var banner=document.querySelector("#banner");
+        banner.addEventListener("mousemove",animateBg);
+
+        var img=document.querySelector("img");
+
+
+        function animateBg()
+        {
+            var mouseX= event.clientX;
+            var mouseY= event.clientY;
+            img.style.transform = 'translate('+mouseX*0.3+"px,"+mouseY*0.3+"px)";
+
+        }
+    </script>
+</body>
+</html>
