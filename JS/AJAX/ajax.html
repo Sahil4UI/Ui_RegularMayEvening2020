@@ -1,0 +1,67 @@
+<!-- AJAX->Asynchronous Javascript and XML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="loadData()">CLICK HERE!!!</button>
+    <script>
+        function fun1(){
+            console.log("Function 1 Called ....");
+        }
+        
+        function fun2(){
+            console.log("Function 2 Called ....");
+        }
+        function fun3(){
+           var xhttp = new XMLHttpRequest();
+           xhttp.open('get','');
+           xhttp.send();
+           xhttp.onreadystatechange = function(){
+               if(this.readyState == 4 && this.status==200)
+               {
+                 for(var i=0;i<100000;i++)
+                    {
+                       for (var j=0;j<100000;j++)
+                        {
+                           var z = i*j;
+                    }
+
+                }
+                console.log("function 3 called");
+               }
+
+           }
+
+        }
+        
+        function fun4(){
+            console.log("Function 4 Called ....");
+        }
+
+        function fun5(){
+            console.log("Function 5 Called ....");
+        }
+        
+        function fun6(){
+            console.log("Function 6 Called ....");
+        }
+        
+
+
+        function loadData()
+        {
+            fun1();
+            fun2();
+            fun3();
+            fun4();
+            fun5();
+            fun6();
+
+        }
+    </script>
+</body>
+</html>
