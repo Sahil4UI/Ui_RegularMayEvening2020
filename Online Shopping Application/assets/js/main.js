@@ -9,7 +9,7 @@ function showProducts() {
     var section = document.querySelector("#products");
     row = document.createElement("div");
     row.className = "row";
-    // ul.innerHTMl = "";
+    section.innerHTMl = "";
     products.forEach(function(obj) {
         var div = document.createElement("div");
         div.className = "products col-lg-4 col-md-6 col-sm-12";
@@ -54,5 +54,52 @@ function add() {
 }
 
 function displayCartItem() {
+    var ul = document.querySelector("#cartItems");
+    ul.innerHTML = "";
+    ul.className = "list-group"
+    obj.itemList.forEach(function(elem) {
+        var li = document.createElement("li");
+        li.className = "product list-group-item";
+        li.setAttribute('title', elem.id);
 
+
+        var p_name = document.createElement("span");
+        p_name.innerHTML = elem.name;
+
+        var p_price = document.createElement("span");
+        p_price.innerHTML = elem.price;
+
+        var p_image = document.createElement("img");
+        p_image.setAttribute('src', elem.image);
+        p_image.className = "productImage";
+
+        var delete_btn = document.createElement('button');
+        delete_btn.className = "btn btn-danger text-white ml-auto";
+        delete_btn.innerHTML = '<i class="fas fa-trash-alt"></i>';
+        delete_btn.addEventListener("click", deleteProducts);
+
+        li.appendChild(p_image);
+
+        li.appendChild(p_name);
+
+
+        li.appendChild(p_price);
+
+        li.appendChild(delete_btn);
+        ul.appendChild(li);
+
+
+
+    });
+
+
+
+}
+
+function deleteProducts() {
+    var elem = event.srcElement.parentElement;
+    var id = elem.title;
+    obj.deleteItem(id);
+    console.log(obj.itemList);
+    displayCartItem()
 }

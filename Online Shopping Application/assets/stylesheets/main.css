@@ -24,3 +24,22 @@
 #products img {
     max-height: 150px;
 }
+
+
+/* cartItems */
+
+#cartItems li img {
+    width: 15%;
+    /* max-height: 70px; */
+}
+
+#cartItems span {
+    display: inline-block;
+    margin: 0px 20px;
+    border: 1px dotted #999;
+    padding: 5px;
+}
+
+#cartItems li button i {
+    pointer-events: none;
+}
