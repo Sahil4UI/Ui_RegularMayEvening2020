@@ -1,15 +1,56 @@
 window.addEventListener("load", initEvents);
 
 function initEvents() {
+    document.querySelector("#save").addEventListener("click", saveChanges);
+    document.querySelector("#search").addEventListener("keyup", searchProduct);
+
     showProducts();
+    loadProducts();
 }
+
+function saveChanges() {
+    if (window.localStorage) {
+        var json = JSON.stringify(obj.itemList);
+        localStorage.setItem('cartProducts', json);
+
+
+    } else {
+        alert("Your Browser Doen't support Local storage feature");
+    }
+}
+
+function loadProducts() {
+    if (localStorage.cartProducts) {
+        var data = JSON.parse(localStorage.cartProducts);
+        obj.itemList = data;
+        displayCartItem()
+
+
+    }
+
+}
+
+
+function searchProduct() {
+    var toSearch = event.srcElement.value;
+    products = products.filter(function(obj) {
+        return obj.p_name.toLowerCase().includes(toSearch.toLowerCase());
+
+    });
+    console.log(products);
+
+    showProducts();
+
+}
+
+
 var row;
 
 function showProducts() {
     var section = document.querySelector("#products");
+    section.innerHTML = "";
     row = document.createElement("div");
     row.className = "row";
-    section.innerHTMl = "";
     products.forEach(function(obj) {
         var div = document.createElement("div");
         div.className = "products col-lg-4 col-md-6 col-sm-12";
@@ -49,7 +90,7 @@ function add() {
     var product = elem.childNodes;
     var elemId = elem.title;
     obj.addItem(elemId, product[1].innerHTML, product[2].innerHTML, product[0].src);
-    console.log(obj.itemList);
+    // console.log(obj.itemList);
     displayCartItem();
 }
 
