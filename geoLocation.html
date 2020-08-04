@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="initiate_Geolocation()">CLICK HERE to get CoordINAtes</button>
+    <script>
+        function initiate_Geolocation() {
+            navigator.geolocation.getCurrentPosition(handle_geolocation_query);
+        }
+
+        function handle_geolocation_query(position) {
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            alert('latitude = ' + lat + '\nlongitude=' + long);
+
+        }
+    </script>
+</body>
+
+</html>
